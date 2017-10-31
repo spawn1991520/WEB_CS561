@@ -14,3 +14,4 @@ if (isset($_SESSION['loggedin'])) { ?>
 <?php } ?>
 <?php include("footer.php");?>
 test
+add new test here
