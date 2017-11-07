@@ -1,35 +1,70 @@
 <?php
-/* User login process, checks if user exists and password is correct */
-require 'db.php';
+ini_set('display_errors',True);
 session_start();
-// Escape email to protect against SQL injections
- //if(!isset($_POST["submit"])){
-   //     exit("wrong");
-$email = $mysqli->escape_string($_POST['email']);
-$result = $mysqli->query("SELECT * FROM Users WHERE email='$email'");
+include("db.php"); 
 
-if ( $result->num_rows == 0 ){ // User doesn't exist
-    $_SESSION['message'] = "User with that email doesn't exist!";
-    header("location: error.php");
-}
-else { // User exists
-    $user = $result->fetch_assoc();
 
-    if ( password_verify($_POST['Password'], $user['Password']) ) {
-        
-        $_SESSION['email'] = $user['email'];
-        $_SESSION['firstname'] = $user['firstname'];
-        $_SESSION['lastname'] = $user['lastname'];
-        //$_SESSION['active'] = $user['active'];
-        
-        // This is how we'll know the user is logged in
-       // $_SESSION['logged_in'] = true;
+?>
 
-        header("location: profile.php");
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <table align="center" bgcolor="#CCCCCC" border="0" cellpadding="0"
+    cellspacing="1" width="300">p
+        <tr>`
+            <td>
+                <form method="post" name="">
+                    <table bgcolor="#FFFFFF" border="0" cellpadding="3"
+                    cellspacing="1" width="100%">
+                        <tr>
+                            <td align="center" colspan="3"><strong>User
+                            Login</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="78">email</td>
+                            <td width="6">:</td>
+                            <td width="294"><input id="email" name=
+                            "email" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td>:</td>
+                            <td><input id="Password" name="Password" type=
+                            "Password"></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><input name="submit" type="submit" value=
+                            "Login"> <input name="reset" type="reset" value=
+                            "reset"></td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <?php
+
+    if (isset($_POST['submit']))
+        {     
+    
+    $email=$_POST['email'];
+    $Password=$_POST['Password'];
+    $_SESSION['login_user']=$email; 
+    $query = mysql_query("SELECT email FROM Users WHERE email='".$email."' and Password='".$Password."'");
+     if (mysql_num_rows($query) != 0)
+    {
+     echo "<script language='javascript' type='text/javascript'> location.href='home.php' </script>";   
+      }
+      else
+      {
+    echo "<script type='text/javascript'>alert('User Name Or Password Invalid!')</script>";
     }
-    else {
-        $_SESSION['message'] = "You have entered wrong password, try again!";
-        header("location: error.php");
     }
-}
-
+    ?>
+</body>
+</html>
