@@ -1,4 +1,22 @@
+<?php session_start();
+?>
+<?php
+include("conection.php");
+include("registration.<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
 
+</body>
+</html>");
+?>
+<!--<?php
+	//if (isset($_SESSION['loggedin'])/*checkAuth(true) != FALSE*/) {
+?>
+<h1>Not logged in</h1>
+-->
 <?php
 
 
@@ -12,7 +30,3 @@ if (checkAuth(true)){
 if (isset($_SESSION['loggedin'])) { ?>
 <h1>Login Successful</h1>
 <?php } ?>
-<?php include("footer.php");?>
-test
-add new test here
-unit test
