@@ -1,4 +1,3 @@
-
 <?php
 /*
 $dbhost = 'oniddb.cws.oregonstate.edu';
@@ -15,15 +14,19 @@ mysql_select_db($dbname, $mysql_handle)
 echo 'Successfully connected to database!';
 */
 
-$connection=mysqli_connect("classmysql.engr.oregonstate.edu","cs340_yanghaox","0722","cs340_yanghaox");
+$connection=mysql_connect("classmysql.engr.oregonstate.edu","cs340_yanghaox","0722");
 
-if (mysqli_connect_errno())
+if (!$connection) 
   {
-  echo "can't connect to MySQL: " . mysqli_connect_error();
+  echo "can't connect to MySQL: " .  mysql_error();
   }
 else{
-	echo "connect to database Successfully";
+	
 }
+$db_selected = mysql_select_db('cs340_yanghaox', $connection);  
+if (!$db_selected) {  
+    die ('Cannot use database mydbname : ' . mysql_error());  
+}  
  // $sql = "INSERT INTO Users (username, firstname, lastname, email, Password, Gender) VALUES ('$_POST[username]', '$_POST[firstname]','$_POST[lastname]', '$_POST[email]','$_POST[Password]','$_POST[Gender]')";
  // $result = mysql_query($sql);
   //if (!mysqli_query($connection,$sql))
@@ -32,4 +35,3 @@ else{
   //}
 
 //mysqli_close($connection);
-?>
