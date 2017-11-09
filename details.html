@@ -1,0 +1,363 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/menu_jquery.js"></script>
+<link rel="stylesheet" href="css/etalage.css">
+<script src="js/jquery.easydropdown.js"></script>
+ <!-- etale -->
+				  <script src="js/jquery.etalage.min.js"></script>
+<script>
+			jQuery(document).ready(function($){
+
+				$('#etalage').etalage({
+					thumb_image_width: 300,
+					thumb_image_height: 400,
+					source_image_width: 800,
+					source_image_height: 1000,
+					show_hint: true,
+					click_callback: function(image_anchor, instance_id){
+						alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+					}
+				});
+
+			});
+		</script>
+		 <!-- etale -->
+
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="top_bg">
+            <div class="container">
+                <div class="header_top">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                    </div>
+                    <div class="top_right">
+                        <ul>
+                            <li><a href="registration.html">Create Account </a></li>|
+                            <li><a href="contact.html">Contact</a></li>|
+                            <li class="login">
+                                <div id="loginContainer">
+                                    <a href="#" id="loginButton"><span>Login</span></a>
+                                    <div id="loginBox">
+                                        <form id="loginForm" action=LoginTest/login.php"">
+                                            <fieldset id="body">
+                                                <fieldset>
+                                                    <label for="username">username</label>
+                                                    <input type="text" name="username" id="username">
+                                                </fieldset>
+                                                <fieldset>
+                                                    <label for="password">Password</label>
+                                                    <input type="password" name="password" id="password">
+                                                </fieldset>
+                                                <input type="submit" id="login" value="Sign in">
+                                                <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+                                            </fieldset>
+                                            <span><a href="#">Forgot your password?</a></span>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head-bann">
+        <div class="container">
+            <div class="head-nav">
+                <!-- megamenu -->
+                <script type="text/javascript" src="js/megamenu.js"></script>
+                <script>
+                    $(document).ready(function ()
+                    { $(".megamenu").megamenu(); });
+                </script>
+                <!-- megamenu -->
+                <span class="menu"> </span>
+                <ul class="megamenu skyblue">
+                    <li><a class="color1" href="index.html">Home</a></li>
+                    <li class="grid">
+                        <a class="color2" href="#">Used</a>
+                        <div class="megapanel">
+                            <div class="row">
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Book</h4>
+                                        <ul>
+                                            <li><a href="1.html">allbook</a></li>
+                                            <li><a href="1.html">textbook</a></li>
+                                            <li><a href="1.html">novel</a></li>
+                                            <li><a href="1.html">album</a></li>
+                                            <li><a href="1.html">kid's</a></li>
+                                            <li><a href="1.html">other</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Electric</h4>
+                                        <ul>
+                                            <li><a href="1.html">allelectric</a></li>
+                                            <li><a href="1.html">kitchen</a></li>
+                                            <li><a href="1.html">livingroom</a></li>
+                                            <li><a href="1.html">yard</a></li>
+                                            <li><a href="1.html">game</a></li>
+                                            <li><a href="1.html">other</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Furniture</h4>
+                                        <ul>
+                                            <li><a href="1.html">table</a></li>
+                                            <li><a href="1.html">sofa</a></li>
+                                            <li><a href="1.html">chair</a></li>
+                                            <li><a href="1.html">bed</a></li>
+                                            <li><a href="1.html">cabinet</a></li>
+                                            <li><a href="1.html">other</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="color3" href="404.html">Gift Card</a></li>
+                    <li>
+                        <a class="color4" href="#">My Account</a>
+                        <div class="megapanel">
+                            <div class="row">
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Information</h4>
+                                        <ul>
+                                            <li><a href="pwdchange.html">Password</a></li>
+                                            <li><a href="1.html">Address</a></li>
+                                            <li><a href="1.html">Other</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col1">
+                                    <div class="h_nav">
+                                        <h4>Profile</h4>
+                                        <ul>
+                                            <li><a href="1.html">Shopping cart</a></li>
+                                            <li><a href="1.html">On sale</a></li>
+                                            <li><a href="1.html">Wishlist</a></li>
+                                            <li><a href="1.html">Auction</a></li>
+                                            <li><a href="1.html">Setting</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col2"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                                <div class="col1"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="color5" href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- script-for-nav -->
+    <script>
+        $("span.menu").click(function () {
+            $(".head-nav ul").slideToggle(300, function () {
+                // Animation complete.
+            });
+        });
+    </script>
+    <!-- script-for-nav -->
+
+    <div class="banner1">
+        <div class="container">
+        </div>
+    </div>
+    <!-- header -->
+    <!-- details -->
+    <div class="details">
+        <div class="container">
+            <div class="row single">
+                <div class="col-md-9">
+                    <div class="single_left">
+
+                        <div class="grid images_3_of_2">
+                            <ul id="etalage">
+                                <li>
+                                    <img class="etalage_thumb_image" src="images/2.gif"/>
+                                    <img class="etalage_source_image" src="images/2.gif"/>
+                                    
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="desc1 span_3_of_2">
+                            <h3>This is a sample</h3>
+                            <p>$200 <a href="#">click for offer</a></p>
+                            <a class="color3">Details:</a>
+                            <a class=" color4">This is a sample detail.</a>
+                           <!-- <div class="det_nav">
+                                <h4>related styles :</h4>
+                                <ul>
+                                    <li><a href="#"><img src="images/1.jpg" class="img-responsive" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/12.jpg" class="img-responsive" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/3.jpg" class="img-responsive" alt="" /></a></li>
+                                    <li><a href="#"><img src="images/ss2.jpg" class="img-responsive" alt="" /></a></li>
+                                </ul>
+                            </div>
+                               
+                            <div class="det_nav1">
+                                <h4>Select a size :</h4>
+                                <div class=" sky-form col col-4">
+                                    <ul>
+                                        <li><label class="checkbox"><input type="checkbox" name="checkbox"><i></i>L</label></li>
+                                        <li><label class="checkbox"><input type="checkbox" name="checkbox"><i></i>S</label></li>
+                                        <li><label class="checkbox"><input type="checkbox" name="checkbox"><i></i>M</label></li>
+                                        <li><label class="checkbox"><input type="checkbox" name="checkbox"><i></i>XL</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="btn_form">
+                                <a href="buy.html">buy</a>
+                            </div>
+                            <a href="#"><span>login to save in wishlist </span></a>
+                               -->
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!--
+                    <div class="single-bottom1">
+                        <h6>Details</h6>
+                        <p class="prod-desc">Lorem ipsum dolor sit amet</p>
+                    </div>
+                        -->
+                    <div class="single-bottom2">
+                        <!--
+                        <h6>Related Products</h6>
+                        <div class="product">
+                            <div class="product-desc">
+                                <div class="product-img">
+                                    <img src="images/12.jpg" class="img-responsive " alt="" />
+                                </div>
+                                <div class="prod1-desc">
+                                    <h5><a class="product_link" href="#">Excepteur sint</a></h5>
+                                    <p class="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="product_price">
+                                <span class="price-access">$597.51</span>
+                                <button class="button1"><span>Add to cart</span></button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="product">
+                            <div class="product-desc">
+                                <div class="product-img">
+                                    <img src="images/9.jpg" class="img-responsive " alt="" />
+                                </div>
+                                <div class="prod1-desc">
+                                    <h5><a class="product_link" href="#">Excepteur sint</a></h5>
+                                    <p class="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="product_price">
+                                <span class="price-access">$597.51</span>
+                                <button class="button1"><span>Add to cart</span></button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="product">
+                            <div class="product-desc">
+                                <div class="product-img">
+                                    <img src="images/8.jpg" class="img-responsive " alt="" />
+                                </div>
+                                <div class="prod1-desc">
+                                    <h5><a class="product_link" href="#">Excepteur sint</a></h5>
+                                    <p class="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="product_price">
+                                <span class="price-access">$597.51</span>
+                                <button class="button1"><span>Add to cart</span></button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                            -->
+                    </div>
+                </div>
+             <div class="col-md-3 span_1_of_right">
+                    <div class="sellers">
+                        <h3 class="m_2">MOST FAVORITE</h3>
+                        <div class="best">
+                            <div class="icon">
+                                <img src="images/sh.jpg" class="img-responsive" alt="" />
+                            </div>
+                            <div class="data">
+                                <h4><a href="#">Mac book</a></h4>
+                                <p>$400.00</p>
+                                <h5>$350.00</h5>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                  
+                    </div>
+                 <!-- FlexSlider -->
+                            <script defer src="js/jquery.flexslider.js"></script>
+                            <script type="text/javascript">
+                                $(function () {
+                                    SyntaxHighlighter.all();
+                                });
+                                $(window).load(function () {
+                                    $('.flexslider').flexslider({
+                                        animation: "slide",
+                                        start: function (slider) {
+                                            $('body').removeClass('loading');
+                                        }
+                                    });
+                                });
+                            </script>
+                            <!-- FlexSlider -->
+
+                        </div>
+                   
+
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
