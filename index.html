@@ -7,25 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="js/jquery.min.js"></script>
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/megamenu.js"></script>
-<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
-<script src="js/menu_jquery.js"></script>
-    <script>			
-    jQuery(document).ready(function($){				
-        $('#etalage').etalage({					
-            thumb_image_width: 300,					
-            thumb_image_height: 400,					
-            source_image_width: 800,					
-            source_image_height: 1000,					
-            show_hint: true,					
-            click_callback: function(image_anchor, instance_id){						
-                alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
-            }
-            });
-        });
-        </script>
+
 </head>
 <body>
     <div class="header">
@@ -42,17 +25,17 @@
                 <li class="login" >
                     <div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
                     <div id="loginBox">
-                        <form id="loginForm">
+                        <form id='loginForm'>
                         <fieldset id="body">
                                 <fieldset>
-                                    <label for="email">Email Address</label>
-                                    <input type="text" name="email" id="email">
+                                    <label for="username">Username</label>
+                                    <input type="text"   id="username">
                                 </fieldset>
                                 <fieldset>
                                     <label for="password">Password</label>
-                                    <input type="password" name="password" id="password">
+                                    <input type="password"   id="password">
                                 </fieldset>
-                            <input type="submit" id="login" value="Sign in">
+                            <input type="button" id="login" value="login in">
                             <label for="checkbox"><input type="checkbox" id="checkbox"><i>Remember me</i></label>
                         </fieldset>
                         <span><a href="#">Forgot your password?</a></span>
@@ -67,7 +50,7 @@
         </div>
         </div>
     <div class="head-bann">
-        <div class="container">	
+        <div class="container"> 
             <div class="head-nav">
                 <span class="menu"></span>
                     <ul class="megamenu skyblue">
@@ -132,7 +115,7 @@
                                         <div class="h_nav">
                                             <h4>Information</h4>
                                             <ul>
-                                                <li><a href="1.html">Password</a></li>
+                                                <li><a href="pwdchange.html">Password</a></li>
                                                 <li><a href="1.html">Address</a></li>
                                                 <li><a href="1.html">Other</a></li>
                                             </ul>
@@ -160,6 +143,7 @@
                              </div>
                           </div>
                        </li>
+                    <li><a class="color5" href="contact.html">Contact Us</a></li>
                     </ul>
             <div class="clearfix"></div>
        </div>
@@ -197,45 +181,33 @@
                     <p><a href="details.html">
                     <img src="images/2.gif" class="img-responsive" alt=""></a>
                     </p>
-                    <a href="details.html"><i class="new"></i></a>					
-                    <div class="biseller-name">						
-                        <h4>PS4 game</h4>						
-                        <p>$10/each</p>					
-                    </div>															
-                    </div>				
-                </li>							
-                <li><div class="biseller-column">					
+                    <a href="details.html"><i class="new"></i></a>                  
+                    <div class="biseller-name">                     
+                        <h4>PS4 game</h4>                       
+                        <p>$10/each</p>                 
+                    </div>                                                          
+                    </div>              
+                </li>                           
+                <li><div class="biseller-column">                   
                     <p><a href="details.html">
                     <img src="images/3.gif" class="img-responsive" alt=""></a>
                     </p>
-                    <a href="details.html"><i class="new"></i></a>					
-                    <div class="biseller-name">						
-                        <h4>PS4</h4>						
-                        <p>$200.00</p>					
-                    </div>											
+                    <a href="details.html"><i class="new"></i></a>                  
+                    <div class="biseller-name">                     
+                        <h4>PS4</h4>                        
+                        <p>$200.00</p>                  
+                    </div>                                          
                     </div>
-                </li> 	
-            </ul>					
-   </div>				
-        <script type="text/javascript">
-            $(window).load(function (){
-                $("#flexiselDemo3").flexisel({ 
-                    visibleItems: 3, animationSpeed: 1000, autoPlay: true,
-                    autoPlaySpeed: 3000, pauseOnHover: true,
-                    enableResponsiveBreakpoints: true,
-                    responsiveBreakpoints: {
-                        portrait: { changePoint: 480, visibleItems: 1 },
-                        landscape: { changePoint: 640, visibleItems: 2 },
-                        tablet: { changePoint: 768, visibleItems: 3 } 
-                    } 
-                }); 
-            });</script>    			
-        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+                </li>   
+            </ul>                   
+   </div>               
+                    
+       
         <div class="clearfix"></div>
     </div>
         <div class="col-md-3 span_1_of_right">
-        <div class="sellers">						
-            <h3 class="m_2">Most favorite</h3>								
+        <div class="sellers">                       
+            <h3 class="m_2">Most favorite</h3>                              
             <div class="best">
             <div class="icon">
                 <img src="images/sh.jpg" class="img-responsive" alt=""/>
@@ -246,21 +218,84 @@
                 <h5>$350.00</h5>
             </div>
                 <div class="clearfix"></div>
-            </div>						
+            </div>                      
          </div>
-        <script defer src="js/jquery.flexslider.js"></script>
-        <script type="text/javascript">            
-            $(function () { SyntaxHighlighter.all(); });
-            (window).load(function () 
-            { $('.flexslider').flexslider({ animation: "slide", 
-                start: function (slider) { $('body').removeClass('loading'); 
+                                                
+        </div>             
+        </div>              
+                <div class="clearfix"></div>        
+        </div>          
+    </body>
+    <script src="js/jquery.min.js"></script>
+ <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+<script type="text/javascript" src="js/megamenu.js"></script>
+ 
+<script src="js/menu_jquery.js"></script>
+    <script>            
+    jQuery(document).ready(function($){ 
+         $("#flexiselDemo3").flexisel({ 
+                    visibleItems: 3, animationSpeed: 1000, autoPlay: true,
+                    autoPlaySpeed: 3000, pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: { changePoint: 480, visibleItems: 1 },
+                        landscape: { changePoint: 640, visibleItems: 2 },
+                        tablet: { changePoint: 768, visibleItems: 3 } 
                     } 
                 }); 
-            });							
-        </script>												
-        </div>		       
-        </div>				
-                <div class="clearfix"></div>		
-        </div>			
-    </body>
+        //SyntaxHighlighter.all(); 
+        $('.flexslider').flexslider({ animation: "slide", 
+                start: function (slider) { $('body').removeClass('loading'); 
+                    } 
+                });
+    $(".megamenu").megamenu();          
+        // $('#etalage').etalage({                 
+        //     thumb_image_width: 300,                 
+        //     thumb_image_height: 400,                    
+        //     source_image_width: 800,                    
+        //     source_image_height: 1000,                  
+        //     show_hint: true,                    
+        //     click_callback: function(image_anchor, instance_id){                        
+        //         alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+        //     }
+        //     });
+            $('#login').click(function(){
+                var username=$('#username').val();
+                var password=$('#password').val()
+                //console.log('name: '+username+'  password: '+password);
+                //$('#loginButton>span').text(username);
+
+                $.post('Login1.php',{
+                       username:username,
+                       Password:password
+                },
+                 function(data,status){
+                        // alert("Data: " + data + "Status: " + status);
+                        if (data == "\nFound Users.Log in success.\n")
+                        {
+                            $('#loginButton>span').text(username);
+                            alert("Data: " + data + "\nStatus: " + status);
+                        }
+                        else
+                        {
+                             alert("Data: " + data + "\nStatus: " + status);
+                        }    
+                    // if(data=="Found Users.Log in success."){
+                    //     $('#loginButton>span').text(username);
+                    // }
+                    // else if(data="Found Users.Password incorrect."){
+                    // }
+                    // else{
+                    // }
+                })
+
+            })
+
+
+
+
+
+        });
+        </script>
 </html>
