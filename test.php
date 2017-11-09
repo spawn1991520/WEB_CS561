@@ -24,12 +24,12 @@ if (mysqli_connect_errno())
   echo "can't connect to MySQL: " . mysqli_connect_error();
   }
 
- // $sql = "INSERT INTO Users (username, firstname, lastname, email, Password, Gender) VALUES ('$_POST[username]', '$_POST[firstname]','$_POST[lastname]', '$_POST[email]','$_POST[Password]','$_POST[Gender]')";
+  $sql = "INSERT INTO Users (username, firstname, lastname, email, Password, Gender) VALUES ('$_POST[username]', '$_POST[firstname]','$_POST[lastname]', '$_POST[email]','$_POST[Password]','$_POST[Gender]')";
  // $result = mysql_query($sql);
-  //if (!mysqli_query($connection,$sql))
-  //{
-  //die('Error: your data already exist in the database. Check your data again. :)' . mysqli_error($connection));
-  //}
+  if (!mysqli_query($connection,$sql))
+  {
+  die('Error: your data already exist in the database. Check your data again. :)' . mysqli_error($connection));
+  }
 
 mysqli_close($connection);
 ?>
