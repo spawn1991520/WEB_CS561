@@ -1,0 +1,32 @@
+<html > 
+<head> 
+<title>动态添加表单元素</title> 
+</head> 
+<script language="javascript"> 
+function AddElement(mytype){ 
+var mytype,TemO=document.getElementById("add"); 
+var newInput = document.createElement("input");  
+newInput.type=mytype;  
+newInput.name="input1"; 
+TemO.appendChild(newInput); 
+var newline= document.createElement("br"); 
+TemO.appendChild(newline); 
+} 
+</script> 
+<body> 
+ <form action="" method="get" name="frm"> 
+
+ </form> 
+ <input name="" type="button" value="名称" onClick="AddElement('text')" /> 
+<input name="" type="button" value="数量" onClick="AddElement('text')" /> 
+
+  <input name="" type="button" value="图片" onClick="AddElement('file')" /> 
+<form action="" method="get" name="frm"> 
+ <div id="add"> 
+ 
+</div>
+
+<textarea rows="3" cols="20">
+</textarea>
+</body> 
+</html>
