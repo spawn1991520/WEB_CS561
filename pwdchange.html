@@ -137,43 +137,46 @@
 					</div>
     			</div>
 				</li>
-			<li><a class="color3" href="3.html">Gift Card</a></li>
+			<li><a class="color3" href="404.html">Gift Card</a></li>
 		    
-            <li><a class="color4" href="#">My Account</a>
-				<div class="megapanel">
-					<div class="row">
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Information</h4>
-								<ul>
-									<li><a href="1.html">Password</a></li>
-									<li><a href="1.html">Address</a></li>
-                                    <li><a href="1.html">Other</a></li>
-								</ul>	
-							</div>							
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Profile</h4>
-								<ul>
-									<li><a href="1.html">Shopping cart</a></li>
-									<li><a href="1.html">On sale</a></li>
-									<li><a href="1.html">Wishlist</a></li>
-									<li><a href="1.html">Auction</a></li>
-									<li><a href="1.html">Setting</a></li>
-								</ul>	
-							</div>							
-						</div>
-					</div>
-					<div class="row">
-						<div class="col2"></div>
-						<div class="col1"></div>
-						<div class="col1"></div>
-						<div class="col1"></div>
-						<div class="col1"></div>
-					</div>
-    				</div>
-			</li>
+                        <li>
+                            <a class="color4" href="#">My Account</a>
+                            <div class="megapanel">
+                                <div class="row">
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Information</h4>
+                                            <ul>
+                                                <li><a href="pwdchange.html">Password</a></li>
+                                                <li><a href="1.html">Address</a></li>
+                                                <li><a href="1.html">Other</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col1">
+                                        <div class="h_nav">
+                                            <h4>Profile</h4>
+                                            <ul>
+                                                <li><a href="1.html">Shopping cart</a></li>
+                                                <li><a href="1.html">On sale</a></li>
+                                                <li><a href="1.html">Wishlist</a></li>
+                                                <li><a href="1.html">Auction</a></li>
+                                                <li><a href="1.html">Setting</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col2"></div>
+                                    <div class="col1"></div>
+                                    <div class="col1"></div>
+                                    <div class="col1"></div>
+                                    <div class="col1"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="color5" href="contact.html">Contact Us</a></li>
+
 		    </ul>
                 <div class="clearfix"> </div>
 			</div>
@@ -195,23 +198,29 @@
 <div class="main" >
 	<!-- start registration -->
 	<div class="pwdchange">
-		<h2><span>  Please type your old password:</span></h2>
 		 <div class="pwdchange_form">
 		 <!-- Form -->
 			<form id="pwdchange_form" action="#" method="post">
+                <h2><span>  Please type your username:</span></h2>
+                <div>
+                    <label>
+                        <input name="usename" id="username" placeholder="Username:" type="text" required>
+                    </label>
+                </div>
+                <h2><span>  Please type your old password:</span></h2>
 				<div>
 					<label>
-						<input name = "password" id = "password" minLength="6" maxLength="15" placeholder="Old password:" type="password" tabindex="4" onchange="checkPasswords()" required>
+						<input name = "password" id = "password" minLength="6" maxLength="15" placeholder="Old password:" type="password" tabindex="0" onchange="checkPasswords()" required>
 					</label>
 				</div>				
                 <h2> <span>Please type your new password:</span></h2>
                     <div>
                         <label>
-                            <input name="password" id="password1" minLength="6" maxLength="15" placeholder="New password:" type="password" tabindex="4" onchange="checkPasswords()" required>
+                            <input name="newpassword" id="password1" minLength="6" maxLength="15" placeholder="New password:" type="password" tabindex="1" onchange="checkPasswords()" required>
                         </label>
                     </div>	
 					<label>
-						<input name = "re_password" id = "password2" minLength="6" maxLength ="15" placeholder="Confirm password:" type="password" tabindex="4" onchange="checkPasswords()" required>
+						<input name = "re_newpassword" id = "password2" minLength="6" maxLength ="15" placeholder="Confirm password:" type="password" tabindex="2" onchange="checkPasswords()" required>
 					</label>
                 <div></div>
 				<div>
