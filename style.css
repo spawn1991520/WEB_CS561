@@ -346,6 +346,27 @@ label {
 	color: #ffffff;
 	background:#ed1c24;
 }
+
+.item_form input [name = "itemname"] {
+    padding: 8px;
+    display: block;
+    width: 200px;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8925em;
+    color: #333333;
+    -webkit-appearance: none;
+    background: #FFFFFF;
+    border: 1px solid rgb(231, 231, 231);
+    font-weight: normal;
+}
+.item_form textarea {
+    resize:none;
+    width:300px;
+    height:114px;
+
+}
+
 .terms{
 	text-decoration:underline;
 	text-transform:uppercase;
@@ -535,8 +556,6 @@ a.show {
 	text-transform: uppercase;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	-o-border-radius: 3px;
-	-msborder-radius: 3px;
 	width:36%;
 }
 a.show:hover {
@@ -1659,7 +1678,7 @@ p.product_descr {
 	min-height: 270px;
 	text-align: center;
 }
-.col-md-6.chuk {
+.-6.chuk {
 	float: left;
 	width: 49%;
 }
@@ -1940,6 +1959,7 @@ h3.m_1 {
 .page-heading.product-listing {
 	border-bottom: none;
 	margin-bottom: 0;
+    margin-top: 2em;
 }
 .page-heading {
 	clear: both;
@@ -1964,9 +1984,7 @@ h3.m_1 {
 	font-size: 0.85em;
 	color: #000;
 }
-.men {
-	padding: 5em 0em;
-}
+
 .brand_box {
 	margin-top: 2em;
 }
@@ -1976,15 +1994,20 @@ h3.m_1 {
 .left-side img{
 	border:1px solid #CFCFCF;
 }
-.middle-side h4 a{
+.middle-side h4 {
 	font-size:1em;
-	text-transform:uppercase;
 	color:#000;
+}
+.middle-side h5 {
+    font-size: 1em;
+    color: #000;
+    margin-top: 1em;
 }
 .middle-side p{
 	font-size:0.85em;
 	color:#999;
 	line-height:1.8em;
+    margin-left:2.5em;
 }
 a.btn.btn1.btn-primary.btn-normal.btn-inline {
 	font-size: 0.8125em;
@@ -2833,7 +2856,7 @@ i.new {
 .head-nav ul li a {
 	font-size: 0.9em;
 }
-.men {
+.item {
 	padding: 2em 0em;
 }
 .product-count {
