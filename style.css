@@ -220,13 +220,13 @@ padding: 0em 0em;
 }
 /*password change*/
 .pwdchange {
-    padding: 9% 1% 1%;
+    padding: 5% 1% 1%;
 }
 .pwdchange h2 {
     font-size:1.5em;
 	color: #00405d;
 	text-transform:capitalize;
-	margin-bottom: 4%;
+	margin-bottom: 1%;
 }
 .pwdchange:first-child{
     width: 45.33333%;
@@ -1873,19 +1873,18 @@ a.products {
 	background: #ed1c24;
 	color: #fff;
 	text-decoration: none;
-	font-size: 12px;
-	font-weight: 400;
-	padding: 0.7em 1.2em;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 0.5em 0.5em;
 	display: inline-block;
 	text-decoration: none;
-	text-shadow: inset 0 2px 0 red, inset 0 0 4px red;
+	text-shadow:  0 2px 0 red,  0 0 4px red;
 	border-radius: 3px;
 	text-align: center;
 	text-transform: uppercase;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	-o-border-radius: 3px;
-	-msborder-radius: 3px;
+    margin-top: 5em;
 }
 a.products:hover{
 	background:#000;
@@ -1966,6 +1965,7 @@ h3.m_1 {
 .middle-side h4 {
 	font-size:1em;
 	color:#000;
+    margin-top:1em;
 }
 .middle-side h5 {
     font-size: 1em;
@@ -1984,7 +1984,7 @@ a.btn.btn1.btn-primary.btn-normal.btn-inline {
 }
 .right-side{
 	border-left: 1px solid #E4DFDF;
-	padding: 35px 0 50px 66px;
+	padding: 0px 0 50px 66px;
 }
 .right-side p{
 	font-size:1em;
