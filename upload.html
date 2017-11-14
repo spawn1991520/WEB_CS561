@@ -21,33 +21,35 @@
 	<div class="logo">
 				<a href="index.html"><img src="images/logo.png" alt=""/></a>
 			</div>
-	<div class="top_right">
-		<ul>
-			<li><a href="registration.html">Create Account </a></li>|
-			<li><a href="contact.html">Contact</a></li>|
-			<li class="login" >
-						<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
-						    <div id="loginBox">                
-						        <form id="loginForm">
-						                <fieldset id="body">
-						                	<fieldset>
-						                          <label for="email">Email Address</label>
-						                          <input type="text" name="email" id="email">
-						                    </fieldset>
-						                    <fieldset>
-						                            <label for="password">Password</label>
-						                            <input type="password" name="password" id="password">
-						                     </fieldset>
-						                    <input type="submit" id="login" value="Sign in">
-						                	<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
-						            	</fieldset>
-						            <span><a href="#">Forgot your password?</a></span>
-							 </form>
-				        </div>
-			      </div>
-			</li>
-		</ul>
-	</div>
+	  <div class="top_right">
+                <ul>
+                <li><a href="registration.html">Create Account</a></li>|
+                <li><a href="#">Contact</a></li>|
+                <li class="login" >
+                    <div id="loginContainer">
+                    <a href="index.html" id="logout"><span></span></a>
+                    <a href="#" id="loginButton"><span>Login</span></a>
+                    <div id="loginBox">
+                        <form id='loginForm'>
+                        <fieldset id="body">
+                                <fieldset>
+                                    <label for="username">Username</label>
+                                    <input type="text"   id="username">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="password">Password</label>
+                                    <input type="password"   id="password">
+                                </fieldset>
+                            <input type="button" id="login" value="login in">
+                            <label for="checkbox"><input type="checkbox" id="checkbox"><i>Remember me</i></label>
+                        </fieldset>
+                        <span><a href="#">Forgot your password?</a></span>
+                 </form>
+                 </div>
+                 </div>
+                 </li>
+                 </ul>
+                </div>
 	<div class="clearfix"> </div>
 </div>
 </div>
@@ -60,19 +62,19 @@
                 <ul class="megamenu skyblue">
                     <li><a class="color1" href="index.html">Home</a></li>
                     <li class="grid">
-                        <a class="color2" href="#">Used</a>
+                        <a class="color2" >Used</a>
                         <div class="megapanel">
                             <div class="row">
                                 <div class="col1">
                                     <div class="h_nav">
                                         <h4>Book</h4>
                                         <ul>
-                                            <li><a href="1.html">allbook</a></li>
-                                            <li><a href="1.html">textbook</a></li>
-                                            <li><a href="1.html">novel</a></li>
-                                            <li><a href="1.html">album</a></li>
-                                            <li><a href="1.html">kid's</a></li>
-                                            <li><a href="1.html">other</a></li>
+                                            <li><a href="list.html">allbook</a></li>
+                                            <li><a href="list.html">textbook</a></li>
+                                            <li><a href="list.html">novel</a></li>
+                                            <li><a href="list.html">album</a></li>
+                                            <li><a href="list.html">kid's</a></li>
+                                            <li><a href="list.html">other</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -80,12 +82,12 @@
                                     <div class="h_nav">
                                         <h4>Electric</h4>
                                         <ul>
-                                            <li><a href="1.html">allelectric</a></li>
-                                            <li><a href="1.html">kitchen</a></li>
-                                            <li><a href="1.html">livingroom</a></li>
-                                            <li><a href="1.html">yard</a></li>
-                                            <li><a href="1.html">game</a></li>
-                                            <li><a href="1.html">other</a></li>
+                                            <li><a href="list.html">allelectric</a></li>
+                                            <li><a href="list.html">kitchen</a></li>
+                                            <li><a href="list.html">livingroom</a></li>
+                                            <li><a href="list.html">yard</a></li>
+                                            <li><a href="list.html">game</a></li>
+                                            <li><a href="list.html">other</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -93,12 +95,12 @@
                                     <div class="h_nav">
                                         <h4>Furniture</h4>
                                         <ul>
-                                            <li><a href="1.html">table</a></li>
-                                            <li><a href="1.html">sofa</a></li>
-                                            <li><a href="1.html">chair</a></li>
-                                            <li><a href="1.html">bed</a></li>
-                                            <li><a href="1.html">cabinet</a></li>
-                                            <li><a href="1.html">other</a></li>
+                                            <li><a href="list.html">table</a></li>
+                                            <li><a href="list.html">sofa</a></li>
+                                            <li><a href="list.html">chair</a></li>
+                                            <li><a href="list.html">bed</a></li>
+                                            <li><a href="list.html">cabinet</a></li>
+                                            <li><a href="list.html">other</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -115,7 +117,7 @@
                     <li><a class="color3" href="404.html">Gift Card</a></li>
 
                     <li>
-                        <a class="color4" href="#">My Account</a>
+                        <a class="color4">My Account</a>
                         <div class="megapanel">
                             <div class="row">
                                 <div class="col1">
@@ -123,8 +125,9 @@
                                         <h4>Information</h4>
                                         <ul>
                                             <li><a href="pwdchange.html">Password</a></li>
-                                            <li><a href="1.html">Address</a></li>
-                                            <li><a href="1.html">Other</a></li>
+                                            <li><a href="continue.html">Address</a></li>
+                                            <li><a href="upload.html">Upload item</a></li>
+                                            <li><a href="continue.html">Other</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -132,11 +135,11 @@
                                     <div class="h_nav">
                                         <h4>Profile</h4>
                                         <ul>
-                                            <li><a href="1.html">Shopping cart</a></li>
-                                            <li><a href="1.html">On sale</a></li>
-                                            <li><a href="1.html">Wishlist</a></li>
-                                            <li><a href="1.html">Auction</a></li>
-                                            <li><a href="1.html">Setting</a></li>
+                                            <li><a href="continue.html">Shopping cart</a></li>
+                                            <li><a href="continue.html">On sale</a></li>
+                                            <li><a href="continue.html">Wishlist</a></li>
+                                            <li><a href="continue.html">Auction</a></li>
+                                            <li><a href="continue.html">Setting</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -150,7 +153,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a class="color5" href="contact.html">Contact Us</a></li>
+                    <li><a class="color5" href="continue.html">Contact Us</a></li>
                 </ul>
                 <div class="clearfix"> </div>
             </div>
@@ -163,6 +166,38 @@
 							// Animation complete.
 						  });
 						});
+                 $('#login').click(function(){
+                var username=$('#username').val();
+                var password=$('#password').val()
+                //console.log('name: '+username+'  password: '+password);
+                //$('#loginButton>span').text(username);
+
+                $.post('Login1.php',{
+                       username:username,
+                       Password:password
+                },
+                 function(data,status){
+                        // alert("Data: " + data + "Status: " + status);
+                        if (data == "\nFound Users.Log in success.\n")
+                        {
+                            $('#loginButton>span').text(username);
+                            $('#logout>span').text("Logout");
+                            alert("Data: " + data + "\nStatus: " + status);
+                        }
+                        else
+                        {
+                             alert("Data: " + data + "\nStatus: " + status);
+                        }    
+                    // if(data=="Found Users.Log in success."){
+                    //     $('#loginButton>span').text(username);
+                    // }
+                    // else if(data="Found Users.Password incorrect."){
+                    // }
+                    // else{
+                    // }
+                })
+
+            })
     </script>
     <script type="text/JavaScript">
        function img_change(){
@@ -171,6 +206,7 @@
         var objI = document.getElementById("list_img");
         objI.src = "images/" + value;
        }
+
     </script>
 <!-- header -->
   <div class="item">
@@ -179,13 +215,13 @@
 			Items
          </h1>
            <div class="brand_box">
-               <form class="item_form" >
+               <form class="item_form" action="upload.php" method = "post">
 
                    <div class="left-side col-xs-12 col-sm-3">
                        <img id="list_img" src="images/1.gif" />
                    </div>
                    <div class="middle-side col-xs-12 col-sm-5">
-                       <select id="img_type" onchange="img_change()">
+                       <select id="img_type" name="img_type" onchange="img_change()">
                            <option value="1.gif">Book</option>
                            <option value="2.gif">Electric</option>
                            <option value="3.gif">Furniture</option>
@@ -208,7 +244,9 @@
                                <input name="Price" type="text" required autofocus>
                            </label>
                        </div>
-                       <a class="products" href="#">Upload</a>
+                       <div>
+                            <input type="submit" value="upload" id="register-submit">
+                       </div> 
                    </div>
                    <div class="clearfix"> </div>
 
